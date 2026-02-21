@@ -1,0 +1,21 @@
+p{
+    color: red;
+    background-color: yellow;
+    text-align: center;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+body{
+    background-color: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
