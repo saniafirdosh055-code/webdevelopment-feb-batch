@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:aquamarine;
+            margin: 0;
+        }
+
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .product{
+            background-color: lightyellow;
+            border: 1px solid black;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 0 8px black;
+        }
+
+        .product img{
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+
+        .product p{
+            font-size: 18px;
+            color: green;
+            text-decoration: underline;
+        }
+
+        .product h2{
+            font-family: cursive;
+            
+        }
+
+        .product button{
+            background-color: cyan;
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="parent">
+        
+        <div class="product">
+            <img src="https://images.pexels.com/photos/30353222/pexels-photo-30353222.jpeg">
+            <h2>iphone</h2>
+            <p>Rs 30000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/13189290/pexels-photo-13189290.jpeg">
+            <h2>Ps5</h2>
+            <p>Rs 50000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/102061/pexels-photo-102061.jpeg">
+            <h2>Laptop</h2>
+            <p>Rs 40000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/4498481/pexels-photo-4498481.jpeg">
+            <h2>Smartwatch</h2>
+            <p>Rs 10000</p>
+            <button>Buy Now</button>
+        </div>       
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightpink;
+        }
+        .Parent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px;
+            align-items: center;
+            background-color: lightyellow;
+            padding: 20px;
+        
+        }
+        .Product{
+            background-color: thistle;
+            border-radius: 12px;
+            width: 220px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 12px black;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+        .Product button{
+            background-color: cyan;
+            color: red;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="Parent">
+        <div class="Product">
+            <img src="https://images.unsplash.com/photo-1555050455-f96634b5cba6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <h2>Lipstick</h2>
+            <P>Rs 5000</P>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Product">
+            <img src="https://images.unsplash.com/photo-1557205465-f3762edea6d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm91bmRhdGlvbiUyMG1ha2V1cHxlbnwwfHwwfHx8MA%3D%3D">
+            <h2>Foundation</h2>
+            <P>Rs 7000</P>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Product">
+            <img src="https://images.unsplash.com/photo-1527633412983-d80af308e660?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXBhY3QlMjBwb3dkZXJ8ZW58MHx8MHx8fDA%3D">
+            <h2>Compact Powder</h2>
+            <P>Rs 3000</P> 
+            <button>Buy Now</button>
+        </div>
+    
+        <div class="Product">
+            <img src="https://images.unsplash.com/photo-1668255446079-b15fd061735d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXllbGluZXJ8ZW58MHx8MHx8fDA%3D">
+            <h2>Eyeliner</h2>
+            <P>Rs 2000</P>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="Product">
+            <img src="https://images.unsplash.com/photo-1619406266880-7e130b6c65c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFzY2FyYXxlbnwwfHwwfHx8MA%3D%3D">
+            <h2>Mascara</h2>
+            <P>Rs 4000</P>
+            <button>Buy Now</button>
+        </div>
+        
+        <div class="Product">
+            <img src="https://plus.unsplash.com/premium_photo-1726840825289-8de3e79e42d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFrZXVwJTIwYmx1c2h8ZW58MHx8MHx8fDA%3D">
+            <h2>Blush</h2>
+            <P>Rs 3500</P>
+            <button>Buy Now</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

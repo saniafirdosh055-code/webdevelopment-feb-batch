@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Data Types in JavaScript
+
+    //1.String - Text "Text" or 'String' - sequence of characters
+    var username = "mike"
+
+    var password = "mike@123"
+
+    console.log(typeof(username))
+    console.log(typeof(passwaord))
+
+    //2. Number - +ve, -ve, Decimal Number
+
+    var age =36
+    var temp=11.11
+    var cyz= -12
+    console.log(typeof(age))
+    console.log(typeof(temp))
+    console.log(typeof(xyz))
+
+    //3. Boolean - true or false value can store
+    var isLoggedin = false 
+    var isVerified = true
+
+    console.log(typeof(isloggedin))
+
+    //4.Undefined - value not assigned
+    let deliveryFee
+
+    console.log(typeof(deliveryFee))
+
+    //5.Null
+    var abc = null
+    console.log(typeof(abc))
+
+    //6. Big Int - To store large number (5678479025n) notation n at the last of number
+    var distnaceofeahjdgtu = 46769035258n
+    console.log(typeof(distnaceofeahjdgt))
+
+    //Array - To store multiple data at the same time of different data types as well
+    //symbol - [] Square bracket
+    //Rule : Index no start with 0
+    
+    var fruits = [ "mango", "orange", "apple", 105, 101, true, "watermelon", "a", "12", 14, "hello" ]
+    console.log(fruits)
+
+    //Access the data
+    console.log(fruits[2])
+    console.log(fruits[4])
+
+    //length = Total no of Data in Array
+    console.log(fruits.length)
+
+    // console.log(fruits[-1]) js doesnot support negetive index
+
+
+    //collection of Data - use Object  //symbol - {} curly bracket
+
+    //format  key:value pair
+    var Employee = {
+        //key:value
+        name : "sania",
+        employeeId: 1212,
+        department: "IT",
+        email: "sania@gmail.com"
+    }
+    console.log(name)
+
+    //Access the Data - ObjectName.Keyname
+    console.log(Employee.employeeId)
+    console.log(Employee.department)
+
+    //function - to do a Specific Task
+    //Syntax : function(keyword) functionName(){    }
+
+    function Addition(){
+        //Body of Function - Instruction to perform Task
+        var num1 = 10
+        var num2 = 5
+
+        var sum = num1 + num2 
+        console.log("The Addition is" , sum);
+    }
+
+    Addition() //calling the Function - To perform Task
+
+
+    </script>
+</body>
+</html>
