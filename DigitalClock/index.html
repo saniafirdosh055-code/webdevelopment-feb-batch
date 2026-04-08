@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:linear-gradient(135deg , darkblue) ;
+            font-family: 'inter' , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: blanchedalmond;
+        }
+
+        .clock{
+            text-align: center;
+            padding: 30px 50px;
+            background-color: darkslategrey;
+            border-radius: 15px;
+            box-shadow: 0 0 15px;
+        }
+        #time{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #date{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div id="time">00:00:00 AM</div>
+        <div id="date">Monday , 1 Jan 2026</div>
+    </div>
+    <script>
+        //Function- task to show the current time and date
+        function showClock(){
+            
+            //Date Object
+            //time
+
+            let now = new Date()
+            
+            let hours = now.getHours() //current hrs in 24 hr format
+            let minutes = now.getMinutes() //current hours in 24 hr
+            let second = now.getSeconds()
+
+            //Check AM or PM
+            let ampm = hours >=12 ? "PM":"AM"
+
+            //conversation 24 hr into 12hr
+
+            if(hours > 12){
+                hours = hours - 12
+            }
+            if(hours==0){
+                hours=12
+            }
+
+            //Logic for min & sec
+            if(minutes<10){
+                minutes = '0'+minutes
+            }
+            if(second<10){
+                second = '0'+second
+            }
+
+            //connection bet js and html
+            //Element = Tag
+            document.getElementById('time').innerHTML = hours + ':' + minutes + ':' + second + ':' + ampm   //pending
+
+            //phase2 - day, date, month, yr
+            let day = now.getDay() //mon- starts with 1
+            let date = now.getDate()
+            let month = now.getMonth()   //jan - starts with 0
+            let year = now.getFullYear()
+
+            document.getElementById("date").innerHTML = date + " " + year
+            
+        }
+
+        //keep running function in 1 - (1000) secods
+
+        setInterval(showClock, 1000)   //pending
+
+        showClock()
+    </script>
+</body>
+</html>
